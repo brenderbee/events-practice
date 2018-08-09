@@ -6,8 +6,8 @@ new Vue({
 		y: 0
 	},
 	methods: {
-		increase: function() {
-			this.counter += 1;
+		increase: function(num, event) {
+			this.counter += num;
 		},
 		updateCoordinates: function(event) {
 			this.x = event.clientX;

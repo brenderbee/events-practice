@@ -8,9 +8,12 @@
   </head>
   <body>
     <div id="app">
-      <button type="button" name="button" v-on:click="increase">Click</button>
+      <button type="button" name="button" v-on:click="increase(2, $event)">Click</button>
       <p>{{ counter }}</p>
-      <p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }}</p>
+      <p v-on:mousemove="updateCoordinates">
+        Coordinates: {{ x }} / {{ y }}
+        - <span v-on:mousemove.stop="">DEAD SPOT</span>
+      </p>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
