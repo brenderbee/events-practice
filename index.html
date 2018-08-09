@@ -14,6 +14,7 @@
         Coordinates: {{ x }} / {{ y }}
         - <span v-on:mousemove.stop="">DEAD SPOT</span>
       </p>
+      <input type="text" v-on:keyup.enter="alertMe" v-bind:placeholder="inputPlaceholder">
     </div>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
